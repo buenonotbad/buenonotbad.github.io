@@ -1,0 +1,54 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// LOCAL OVERRIDE of al_folio_core 1.0.15 `assets/css/main.scss`.
+// Only change vs. the gem: the two theme colors passed to `variables` below.
+// After upgrading al_folio_core, diff this file against the gem's copy:
+//   bundle exec al-folio upgrade overrides audit
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+// ---- Site theme colors: edit these two ----
+$theme-color-light: #2b6f8a; // light mode: links, hover, blockquote bar. Gem default: #b509ac
+$theme-color-dark: #cff4ff; // dark mode. Gem default: #2698ba
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }},
+  // Left-hand names must match the gem's `_variables.scss`; do not rename them.
+  $purple-color: $theme-color-light,
+  $cyan-color: $theme-color-dark
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// ---- Site-specific tweaks (not part of the gem copy) ----
+// CV page: smaller section headings (gem: 2rem) and more space between section cards (gem: 1rem).
+.cv .card-title {
+  font-size: 1.35rem;
+}
+.cv .card.mt-3 {
+  margin-top: 2rem !important;
+}

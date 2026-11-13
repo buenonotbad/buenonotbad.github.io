@@ -16,10 +16,10 @@ profile:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+# announcements:
+#   enabled: true # includes a list of news items
+#   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+#   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
@@ -29,16 +29,14 @@ latest_posts:
 
 <style>
   .post-header { margin-bottom: 2.5rem; }
+  .profile .more-info { font-family: monospace; font-size: 0.85rem; } /* keep the gem's monospace, just smaller */
 </style>
 
 I am a second-year M.S. student in Computer Science at the University at Buffalo.
 Before that, I received master's degrees in Robotic Fabrication from ETH Zurich
 and in Architecture from UCLA.
 
-My research interests lie at the intersection of machine learning, robotic fabrication,
-structural analysis, and optimization. In particular, I am interested in integrating
-structural analysis into the design and planning of robotic construction, enabling informed, holistic decisions
-that make robotic fabrication both efficient and structurally sound.
+My research interests lie at the intersection of robotic fabrication, machine learning, structural computation, and optimization. In particular, I am interested in integrating structural reasoning into the design and planning of robotic construction, enabling informed and holistic decision-making. In the long run, I hope to advance our understanding of robot-assisted structure formation and develop methods that make robotic construction both efficient and robust.
 
 **I am applying to Ph.D. programs for Fall 2027.**
 Feel free to reach out at [yixiaohu@buffalo.edu](mailto:yixiaohu@buffalo.edu).
