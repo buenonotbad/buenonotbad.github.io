@@ -1,6 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
 // LOCAL OVERRIDE of al_folio_core 1.0.15 `assets/css/main.scss`.
@@ -19,7 +20,7 @@ $theme-color-dark: #cff4ff; // dark mode. Gem default: #2698ba
 /* Configure your design tokens BEFORE loading any of your partials.
    Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
 @use "variables" with (
-  $max-content-width: {{ site.max_width | default:  "930px" }},
+  $max-content-width: {{site.max_width | default: "930px"}},
   // Left-hand names must match the gem's `_variables.scss`; do not rename them.
   $purple-color: $theme-color-light,
   $cyan-color: $theme-color-dark
