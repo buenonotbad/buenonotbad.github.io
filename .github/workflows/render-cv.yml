@@ -1,14 +1,6 @@
 name: Render a CV
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
+  # Push trigger removed: the CV PDF is a hand-made LaTeX file (assets/pdf/Yixiao_Huang_CV.pdf), not RenderCV output.
   workflow_call:
   workflow_dispatch:
 permissions:
