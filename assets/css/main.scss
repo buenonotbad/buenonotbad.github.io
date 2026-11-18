@@ -53,3 +53,20 @@ $theme-color-dark: #cff4ff; // dark mode. Gem default: #2698ba
 .cv .card.mt-3 {
   margin-top: 2rem !important;
 }
+// Hide the site-wide copyright footer. The gem has no flag to turn it off, so hide both variants
+// (`footer_fixed: true` → .fixed-bottom, false → .sticky-bottom).
+footer.fixed-bottom,
+footer.sticky-bottom {
+  display: none;
+}
+// CV entries on phones (< 576px), where the date column stacks above the text: the shipped Tailwind build has no
+// `.list-group-item` padding, so entries touched each other while the location paragraph's default margins pushed
+// the date away from its own title. Keep date + title together and separate one entry from the next.
+@media (max-width: 575.98px) {
+  .cv .date-column p.location {
+    margin: 0.25rem 0 0;
+  }
+  .cv .list-group-item + .list-group-item {
+    margin-top: 1.75rem;
+  }
+}
