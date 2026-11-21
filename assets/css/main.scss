@@ -107,3 +107,35 @@ swiper-container img {
   aspect-ratio: 16 / 9;
   object-fit: contain;
 }
+// mobile navbar: no hamburger, tabs always visible in one row
+@media (max-width: 575.98px) {
+  .navbar .navbar-toggler-main {
+    display: none;
+  }
+  // the theme hides .collapse with `display: none !important` inside tailwind's
+  // `@layer utilities`; a layered !important beats any unlayered rule, so this
+  // rule has to live in the same layer (where the more specific selector wins)
+  @layer utilities {
+    .navbar #navbarNav.navbar-collapse-main {
+      display: flex !important;
+    }
+  }
+  .navbar #navbarNav.navbar-collapse-main {
+    flex-basis: 100%;
+  }
+  .navbar .navbar-menu-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .navbar-menu-list .nav-link {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  #search-toggle .nav-link {
+    font-size: 0; // hide "ctrl k" on phones, keep the icon
+  }
+  #search-toggle .nav-link i {
+    font-size: 1rem;
+  }
+}
