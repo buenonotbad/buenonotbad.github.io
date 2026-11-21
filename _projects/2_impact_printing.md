@@ -10,7 +10,6 @@ images:
   slider: true
 ---
 
-
 Team research project @ ETH Zürich · Spring 2023<br>
 **Role** · Design · Programming · Material mixing · Robotic fabrication
 
@@ -19,7 +18,6 @@ Team research project @ ETH Zürich · Spring 2023<br>
         {% include figure.liquid loading="eager" path="assets/img/projects/impact_printing/cover.jpg" title="prototypes on display" caption="Prototypes on display at the Robotic Fabrication Laboratory (RFL)<br>Gramazio Kohler Research, ETH Zürich" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 
 Impact Printing is an additive manufacturing method that aggregates malleable soft particles through a robotic shooting process
 ([Ming et al., 2022](https://doi.org/10.1089/3dp.2021.0068)). Upon impact, the kinetic energy of each particle turns into plastic deformation, so the
@@ -71,7 +69,6 @@ instead of a distributed fracture pattern that could weaken the wall.
     {% include figure.liquid path="assets/img/projects/impact_printing/crack3.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 
 ### Demonstrator
 

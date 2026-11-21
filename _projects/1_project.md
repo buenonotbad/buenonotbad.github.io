@@ -22,7 +22,6 @@ jet-fusion printed nodes.
     </div>
 </div>
 
-
 ### crown
 
 Four column-to-spaceframe connections were compared for joint count, adaptability and structural strength. Var_3 was fabricated.
@@ -65,7 +64,6 @@ Four column-to-spaceframe connections were compared for joint count, adaptabilit
     {% include figure.liquid path="assets/img/projects/impact_printing/machine3.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 
 ### Assembly
 
@@ -119,4 +117,4 @@ load-tested at ETH Hönggerberg.
     </div>
 </div>
 
-Role:programming, canopy design,  robotic processing & assembly
+Role:programming, canopy design, robotic processing & assembly
