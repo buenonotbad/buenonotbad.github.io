@@ -1,81 +1,122 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Prōtóplasto
+description: Hollow-core 3D printed pavilion · team project · ETH Zürich, 2023
+img: assets/img/projects/protoplasto/cover.jpg # card thumbnail, e.g. pdf p.31
 importance: 1
-category: work
-related_publications: true
+category: robotic fabrication
+related_publications: false
+images:
+  slider: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+A pavilion that tests fast robotic printing of lightweight, non-load-bearing building components with Large-Scale Hollow-Core 3D Printing (HC3DP),
+together with digital assembly for quick deployment. It has three parts: HC3DP columns, crowns, and a canopy of robot-cut fibreglass pipes/trusses joined by
+jet-fusion printed nodes.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+{% comment %} pdf p.31 {% endcomment %}
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/protoplasto/cover.jpg" title="Prototypes display @ RFL, Gramazio Kohler, ETH Zürich" caption="Prototypes display,<br>@ RFL, Gramazio Kohler Research, ETH Zürich" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+
+
+### crown
+
+Four column-to-spaceframe connections were compared for joint count, adaptability and structural strength. Var_3 was fabricated.
+
+{% comment %} pdf p.33: left = variants, right = Var_3 photo {% endcomment %}
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/protoplasto/crown_variants.jpg" title="crown variants" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/protoplasto/crown_var3.jpg" title="Var_3 fabrication" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Connection variants (left) and the fabricated Var_3 (right).
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### process
 
-{% raw %}
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" rewind="true">
+  <swiper-slide>{% include figure.liquid path="assets/img/projects/protoplasto/design.png" caption="design iteration" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/projects/protoplasto/material.jpg" caption="The earth based material is first mixed 
+  with sludge, clay, water, lime and gravels." class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/projects/protoplasto/mixing.jpg" caption="Taking out the sludge for mixing" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/projects/protoplasto/demo_2.jpg" caption="Set up in open space" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/projects/protoplasto/demo_3.jpg" caption="Photo: © Gramazio Kohler Research, ETH Zürich" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+### custom Printing machine
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/impact_printing/gamachine1.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/impact_printing/machine2.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/impact_printing/machine3.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
 
-{% endraw %}
+
+### Assembly
+
+The pipes were assembled by hand in sub-modules, guided by AR programs and Grasshopper scripts.
+
+{% comment %} pdf p.34 {% endcomment %}
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/protoplasto/assembly_1.jpg" title="canopy layout" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/protoplasto/assembly_2.jpg" title="sub-modules" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+### Column printing
+
+HC3DP is much faster than regular 3D printing for large elements: a 2 m column prints in about 8 hours. The columns sit on concrete bases and were
+load-tested at ETH Hönggerberg.
+
+{% comment %} pdf p.35 {% endcomment %}
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/protoplasto/column_print.jpg" title="column printing" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/protoplasto/column_load_test.jpg" title="load test" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Printing a column (left) and the load test (right).
+</div>
+
+### Demonstrator
+
+{% comment %} pdf p.36 + p.37 {% endcomment %}
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/protoplasto/demo_1.jpg" title="demonstrator" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/protoplasto/demo_2.jpg" title="demonstrator in open space" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/protoplasto/demo_3.jpg" title="pavilion" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Role:programming, canopy design,  robotic processing & assembly

@@ -1,5 +1,5 @@
 cv:
-  # Commented out to hide the "Contact Information" and "Professional Summary" cards on the CV page.
+  # hidden on cv page
   # name: Yixiao Huang
   # label: M.S. Student in Computer Science and Engineering
   # email: yixiaohu@buffalo.edu
@@ -15,10 +15,7 @@ cv:
     - network: LinkedIn
       username: yixiao-huang-85629a23a
 
-  # Field notes (al_folio_cv templates):
-  # - Dates: only the YEAR is shown on the page. Omit start_date/end_date to hide the badge;
-  #   undated entries then keep file order (dated entries are sorted newest first).
-  # - "Experience" entries are sorted by date automatically.
+  # only the year shows; no date = no badge
   sections:
     Education:
       - institution: University at Buffalo
@@ -52,7 +49,7 @@ cv:
         date: "2026"
         summary: "**Yixiao Huang**"
 
-    # Research and professional roles share this one section; the template sorts them by date.
+    # sorted by date automatically
     Experience:
       - position: Digital Technology Lead
         company: Kaisheng Engineering Consulting

@@ -1,6 +1,6 @@
 name: Render a CV
 on:
-  # Push trigger removed: the CV PDF is a hand-made LaTeX file (assets/pdf/Yixiao_Huang_CV.pdf), not RenderCV output.
+  # no push trigger, pdf is made by hand: assets/pdf/Yixiao_Huang_CV.pdf
   workflow_call:
   workflow_dispatch:
 permissions:

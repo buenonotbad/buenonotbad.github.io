@@ -124,10 +124,7 @@
         {% assign vol = cv.sections.Volunteer | default: empty_array %}
         {% assign combined_experience = exp | concat: vol | al_cv_sort_by_date %}
 
-        {% comment %}
-          LOCAL OVERRIDE (al_folio_cv 1.0.2): Experience is rendered where its key appears in
-          _data/cv.yml instead of always first. Volunteer stays merged into it.
-        {% endcomment %}
+        {% comment %} edit (al_folio_cv 1.0.2 templates/cv/render.liquid): experience follows cv.yml order {% endcomment %}
         {% for section_pair in cv.sections %}
           {% assign section_title = section_pair[0] %}
           {% assign section_entries = section_pair[1] %}

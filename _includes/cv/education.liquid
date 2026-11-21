@@ -4,9 +4,7 @@
   - RenderCV: institution, area, studyType (or degree), start_date, end_date, location, courses, highlights
   - JSONResume: institution, area, studyType, startDate, endDate, location, courses, highlights
 
-  LOCAL OVERRIDE of al_folio_cv 1.0.2 `templates/cv/education.liquid`.
-  Only change vs. the gem: the institution is the bold first line (and carries `entry.url`),
-  the degree is the smaller second line. After upgrading al_folio_cv, diff this file against the gem's copy.
+  copied from al_folio_cv 1.0.2 templates/cv/education.liquid; edit: institution first, degree second
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
