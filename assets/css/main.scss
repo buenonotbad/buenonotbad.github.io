@@ -69,6 +69,32 @@ footer.sticky-bottom {
   aspect-ratio: 9 / 16;
   object-fit: cover;
 }
+// image row: same 20:9 frame, nothing cropped, white background (for drawings)
+.row.img-pair img {
+  width: 100%;
+  aspect-ratio: 20 / 9;
+  object-fit: contain;
+  background: #fff;
+}
+// grid: col-sm-5 / col-sm-7 (missing from al_folio_core's bootstrap-compat)
+.col-sm-5,
+.col-sm-7 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  .col-sm-5 {
+    flex: 0 0 41.6667%;
+    max-width: 41.6667%;
+  }
+  .col-sm-7 {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%;
+  }
+}
 // video embeds (youtube/vimeo): 16:9, full width
 figure iframe {
   width: 100%;

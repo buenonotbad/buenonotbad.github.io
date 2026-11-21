@@ -39,8 +39,6 @@ and in Architecture from UCLA.
 
 My research interests lie at the intersection of robotic fabrication, machine learning, structural computation, and optimization. In particular, I am interested in integrating structural reasoning into the design, planning and execution of robotic construction, enabling informed and holistic decision-making. In the long run, I hope to advance our understanding of robot-assisted structure formation and develop methods that make it both efficient and robust.
 
-**I am applying to Ph.D. programs for Fall 2027.**
-Feel free to reach out at [yixiaohu@buffalo.edu](mailto:yixiaohu@buffalo.edu).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
