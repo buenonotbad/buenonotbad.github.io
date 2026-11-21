@@ -22,6 +22,7 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 3 # leave blank to include all the news in the `_news` folder
 
+
 # latest_posts:
 #   enabled: true
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
@@ -38,7 +39,6 @@ Before that, I received master's degrees in Robotic Fabrication from ETH Zurich
 and in Architecture from UCLA.
 
 My research interests lie at the intersection of robotic fabrication, machine learning, structural computation, and optimization. In particular, I am interested in integrating structural reasoning into the design, planning and execution of robotic construction, enabling informed and holistic decision-making. In the long run, I hope to advance our understanding of robot-assisted structure formation and develop methods that make it both efficient and robust.
-
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
