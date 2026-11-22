@@ -19,7 +19,7 @@ cv:
   sections:
     Education:
       - institution: University at Buffalo
-        degree: M.S. in Computer Science and Engineering
+        degree: M.S. in Computer Science
         location: Buffalo, NY
         start_date: 2025-08
 
