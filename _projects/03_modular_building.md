@@ -6,6 +6,7 @@ img: assets/img/projects/modular_building/cover.jpg
 importance: 3
 category: digital
 related_publications: false
+pseudocode: true
 ---
 
 Individual academic project @ UCLA · Spring 2022<br>
@@ -28,16 +29,46 @@ reassembled into a new form.
 
 ### Algorithm
 
-The modules sit on a voxel grid, and the space around the grid is treated as a graph. Given an initial and a target form with the same number of modules, every module is assigned a target cell position by computation. It then travels there along a constructed path.
+{% comment %} TODO: yet to complete pseudo code here {% endcomment %}
 
-{% comment %} TODO: replace with your pseudo code {% endcomment %}
+```pseudocode
+\begin{algorithm}
+\caption{Reconfiguration}
+\begin{algorithmic}
+\INPUT initial and target configurations $S = \{p_1, \ldots, p_n\}$, $T = \{p'_1, \ldots, p'_n\}$, with cell positions $p_i, p'_i \in \mathbb{R}^3$
+\OUTPUT a sequence of module paths $\mathcal{P}$ that turns $S$ into $T$
 
-```text
-Input:  initial configuration S, target configuration T   (|S| = |T|)
-Output: a sequence of module moves that turns S into T
+\STATE \COMMENT{build the graph of passable space}
+\STATE $G = (V, E) \gets$ grid adjacency of the passable space around $S$ and $T$
 
-...
+\STATE \COMMENT{map each module to its free neighboring nodes}
+\FORALL{$m \in S$}
+    \STATE $H[m] \gets \{\, v \in V : v \text{ adjacent to } m \,\}$
+\ENDFOR
+
+\STATE \COMMENT{route the modules one by one}
+\STATE $\mathcal{P} \gets$ empty sequence
+\FORALL{$m \in S$}
+    \STATE assign $m$ a target $t(m) \in T$
+    \STATE $P \gets$ \CALL{AStar}{$G, H[m], t(m)$}
+    \STATE move $m$ along $P$ and update $G$
+    \STATE append $P$ to $\mathcal{P}$
+\ENDFOR
+\RETURN $\mathcal{P}$
+\end{algorithmic}
+\end{algorithm}
 ```
+
+<!-- pseudocode.js adds its math after MathJax has run, so MathJax never adds the CSS for those glyphs and they show up blank; re-run MathJax once -->
+<script>
+  window.addEventListener("load", function refreshMath() {
+    if (!window.MathJax || !MathJax.startup || !MathJax.startup.promise) return setTimeout(refreshMath, 200);
+    MathJax.startup.promise.then(() => {
+      MathJax.startup.document.clear();
+      MathJax.startup.document.updateDocument();
+    });
+  });
+</script>
 
 ### Demo
 
