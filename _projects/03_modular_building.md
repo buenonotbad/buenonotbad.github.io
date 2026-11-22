@@ -10,7 +10,6 @@ related_publications: false
 
 Individual academic project @ UCLA · Spring 2022<br>
 
-
 Developed in discussion with [Arrival](https://en.wikipedia.org/wiki/Arrival_%28company%29), a UK maker of electric vans built from modular, recyclable
 parts, this project carries the same idea from vehicles to buildings. A building becomes a modular structure with a _metabolism_: as demand changes, for
 example after a short peak of events such as the LA 2028 Olympics, its modules are disassembled, refitted in a micro-factory, and shipped back to be
@@ -22,14 +21,14 @@ reassembled into a new form.
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/modular_building/cover.jpg" caption="Arrival's modular approach to vehicle production. Image: Arrival" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/modular_building/microfactory.jpg" caption="Arrival's micro-factory. Image: The New York Times" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/embed/DXZEHJeoqSo" class="img-fluid rounded z-depth-1" width="100%" height="400" %}
     </div>
 </div>
 
 ### Algorithm
 
-The modules sit on a voxel grid, and the space around the grid is treated as a graph.  Given an initial and a target form with the same number of modules, every module is assigned a target cell position by computation. It then travels there along a contructed path.
+The modules sit on a voxel grid, and the space around the grid is treated as a graph. Given an initial and a target form with the same number of modules, every module is assigned a target cell position by computation. It then travels there along a constructed path.
 
 {% comment %} TODO: replace with your pseudo code {% endcomment %}
 
@@ -47,13 +46,11 @@ each module and routing the modules one by one. In this demo, 1,500+ modules rea
 
 <div class="row">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid path="https://player.vimeo.com/video/677168413" class="img-fluid rounded z-depth-1" width="100%" height="400" %}
+        {% include video.liquid path="https://player.vimeo.com/video/677168413" class="img-fluid rounded z-depth-1" caption = "Demo: reassemble" width="100%" height="400" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid path="https://player.vimeo.com/video/896784882?h=845636b9ed" class="img-fluid rounded z-depth-1" width="100%" height="400" %}
+        {% include video.liquid path="https://player.vimeo.com/video/896784882?h=845636b9ed" class="img-fluid rounded z-depth-1" caption = "Demo: in-situ transform" width="100%" height="400" %}
     </div>
 </div>
 
-
-{% include video.liquid path="https://player.vimeo.com/video/703057411?h=8b84ae630e" class="img-fluid rounded z-depth-1" width="100%" height="400" %}
-
+{% include video.liquid path="https://player.vimeo.com/video/703057411?h=8b84ae630e" class="img-fluid rounded z-depth-1" width="100%" caption = "Demo: Conceptual modular recycling for LA Olympic 2028" height="400" %}
