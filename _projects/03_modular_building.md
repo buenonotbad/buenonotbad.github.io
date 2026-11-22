@@ -20,7 +20,7 @@ reassembled into a new form.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/modular_building/cover.jpg" caption="Arrival's modular approach to vehicle production. Image: Arrival" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/modular_building/1.jpg" caption="Arrival's modular approach to vehicle production. Image: Arrival" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include video.liquid path="https://www.youtube.com/embed/DXZEHJeoqSo" class="img-fluid rounded z-depth-1" width="100%" height="400" %}
