@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reconfigurable Modules
-description: Graph-search reconfiguration of a modular building · individual project · UCLA, 2022
+description: Graph-search reconfiguration of a modular structure · individual project · UCLA, 2022
 img: assets/img/projects/modular_building/cover.jpg
 importance: 3
 category: digital
@@ -11,19 +11,32 @@ pseudocode: true
 
 Individual academic project @ UCLA · Spring 2022<br>
 
+
 Developed in discussion with [Arrival](https://en.wikipedia.org/wiki/Arrival_%28company%29), a UK maker of electric vans built from modular, recyclable
 parts, this project carries the same idea from vehicles to buildings. A building becomes a modular structure with a _metabolism_: as demand changes, for
 example after a short peak of events such as the LA 2028 Olympics, its modules are disassembled, refitted in a micro-factory, and shipped back to be
 reassembled into a new form.
 
-{% comment %} Arrival images not the best yet {% endcomment %}
+### Background
+{% comment %} Image from Arrival {% endcomment %}
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/modular_building/1.jpg" caption="Arrival's modular approach to vehicle production. Image: Arrival" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/embed/DXZEHJeoqSo" class="img-fluid rounded z-depth-1" width="100%" height="400" %}
+        {% include video.liquid path="https://www.youtube.com/embed/DXZEHJeoqSo" caption="Arrival microfactory" class="img-fluid rounded z-depth-1" width="100%" height="400" %}
+    </div>
+</div>
+
+{% comment %} Image from MIT and ICD paper {% endcomment %}
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/modular_building/mit.png" caption="Reconfigurable assembly robot, Center for Bits and Atoms, MIT" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/modular_building/icd.png" caption="Collective construction robots self-assemble with controlled locomotion, ICD, University of Stuttgart" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
