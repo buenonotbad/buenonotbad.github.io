@@ -19,3 +19,6 @@ vendor
 # Python bytecode from bin/ helper scripts
 __pycache__/
 *.pyc
+
+# CV LaTeX source; only the compiled PDF in assets/pdf/ is published
+_cv_src/

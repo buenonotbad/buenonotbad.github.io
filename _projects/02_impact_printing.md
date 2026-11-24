@@ -4,7 +4,7 @@ title: Impact Printing
 description: Robotic shooting of earthen soft particles · team project · ETH Zürich, 2023
 img: assets/img/projects/impact_printing/cover.jpg
 importance: 2
-category: robotic fabrication
+category: Robotic Fabrication
 related_publications: false
 images:
   slider: true

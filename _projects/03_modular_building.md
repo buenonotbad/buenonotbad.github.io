@@ -4,13 +4,12 @@ title: Reconfigurable Modules
 description: Graph-search reconfiguration of a modular structure · individual project · UCLA, 2022
 img: assets/img/projects/modular_building/cover.jpg
 importance: 3
-category: digital
+category: Digital
 related_publications: false
 pseudocode: true
 ---
 
 Individual academic project @ UCLA · Spring 2022<br>
-
 
 Developed in discussion with [Arrival](https://en.wikipedia.org/wiki/Arrival_%28company%29), a UK maker of electric vans built from modular, recyclable
 parts, this project carries the same idea from vehicles to buildings. A building becomes a modular structure with a _metabolism_: as demand changes, for
@@ -18,6 +17,7 @@ example after a short peak of events such as the LA 2028 Olympics, its modules a
 reassembled into a new form.
 
 ### Background
+
 {% comment %} Image from Arrival {% endcomment %}
 
 <div class="row">

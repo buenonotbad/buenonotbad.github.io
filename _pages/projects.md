@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of selected projects
 nav: true
 nav_order: 3
-display_categories: [ai, robotic fabrication, digital]
+display_categories: [AI, Robotic Fabrication, Digital]
 horizontal: false
 ---
 

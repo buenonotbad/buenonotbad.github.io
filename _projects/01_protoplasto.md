@@ -4,7 +4,7 @@ title: Prōtóplasto
 description: Hollow-core 3D printed pavilion · team project · ETH Zürich, 2023
 img: assets/img/projects/protoplasto/demo1.jpg # thumbnail
 importance: 1
-category: robotic fabrication
+category: Robotic Fabrication
 related_publications: false
 images:
   slider: true

@@ -14,7 +14,7 @@ profile:
     <p>University at Buffalo, SUNY</p>
     <p>Buffalo, NY</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -37,6 +37,8 @@ Before that, I received master's degrees in Robotic Fabrication from ETH Zurich
 and in Architecture from UCLA.
 
 My research interests lie at the intersection of robotic fabrication, machine learning, structural computation, and optimization. In particular, I am interested in integrating structural reasoning into the design, planning and execution of robotic construction, enabling informed and holistic decision-making. In the long run, I hope to advance our understanding of robot-assisted structure formation and develop methods that make it both efficient and robust.
+
+> <small><em>This website is under active development; more content is on the way.</em></small>
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
