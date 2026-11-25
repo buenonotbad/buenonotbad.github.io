@@ -13,7 +13,7 @@ Sole author: method, experiments, and writing. Started as a course project in Hi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/neural_topo/examples.png" caption="Selected test problems at the same amount of material (red arrow: load, green: supports). Plain fine-tuning (middle) leaves a member broken or missing; skeleton-guided fine-tuning (bottom) keeps the load path connected. CE: compliance error vs the SIMP reference." class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/neural_topo/examples.png" caption="Selected test problems at the same amount of material (red arrow: load, green: supports).<br>Plain fine-tuning (middle) leaves a member broken or missing whereas skeleton-guided fine-tuning (bottom) keeps the load path connected. <br>CE: compliance error; BCE: binary cross entropy" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -50,7 +50,7 @@ hardest problems.
 <!-- col-sm-7 ≈ 60% width on desktop, full width on phones; margin auto centers it -->
 <div class="row">
     <div class="col-sm-7 mt-3 mt-md-0" style="margin: 0 auto">
-        {% include figure.liquid path="assets/img/projects/neural_topo/budget.png" caption="Compliance-error tail vs extra material budget. Solid: calibrated global threshold; dashed: every design cut at its own volume." class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/neural_topo/budget.png" caption="Extra material budget - compliance-error tail.<br>Solid: calibrated global threshold; dashed: non-calibrated cut at its own target volume." class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -60,7 +60,7 @@ On problems like its training data, the network output plus **5 SIMP iterations*
 plain SIMP after **200 iterations** (200 FEA runs), and the skeleton-guided model saves one to two more iterations when the
 FEA budget is small.
 
-On textbook problems unlike the training data, a cheap connectivity check catches broken network designs and falls back to plain SIMP, so the pipeline is no worse than SIMP alone.
+On textbook problems unlike the training data, a cheap connectivity check catches broken network designs and falls back to plain SIMP.
 
 <div class="row">
     <div class="col-sm-7 mt-3 mt-md-0" style="margin: 0 auto">
