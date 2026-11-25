@@ -11,6 +11,17 @@ related_publications: false
 Individual research project · University at Buffalo · 2026<br>
 Sole author: method, experiments, and writing. Started as a course project in High Performance Computing II.
 
+<!-- prettier-ignore-start -->
+
+> ##### Summary
+>
+> I present a near-zero-overhead fine-tuning and post-processing pipeline for pretrained neural topology optimization models
+> (Skeleton Recall fine-tuning, calibrated thresholding, morphological closing). At equal material, it cuts the 90th-percentile
+> compliance error from **16.8% to 6.2%** and the failure rate from **1.5% to 0.5%**, about **two-thirds lower**.
+{: .block-tip style="font-size: 1rem; --global-tip-block: #116679; --global-tip-block-bg: #91bed644; --global-tip-block-text: var(--global-text-color); --global-tip-block-title: #116679" }
+
+<!-- prettier-ignore-end -->
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/neural_topo/examples.png" caption="Selected test problems at the same amount of material (red arrow: load, green: supports).<br>Plain fine-tuning (middle) leaves a member broken or missing whereas skeleton-guided fine-tuning (bottom) keeps the load path connected. <br>CE: compliance error; BCE: binary cross entropy" class="img-fluid rounded z-depth-1" %}
@@ -33,11 +44,14 @@ failures are missing **centerlines**, often of thin strut-like members. I fine-t
 material on the skeleton of every member of the reference design (a Skeleton Recall loss [2]), which needs only the
 reference design and no FEA during training.
 
-With every design cut at exactly its target volume, the 90th percentile of the compliance error drops from **16.8% to 10.2%**
-(1,000 test problems, 3 seeds; the 95% confidence interval of the gain excludes zero in every seed).
+With every design cut at exactly its target volume,
 
-Losses that re-weight pixels (by load path, thin members, optimality conditions, or focal loss) do not achieve this: they
-only shift the binarization threshold locally, moving the model along the baseline's compliance–material curve.
+- the 90th percentile of the compliance error drops from **16.8% to 6.2%**
+- failure ($\frac{\text{error}}{\text{error}_{gt}} \ge 2$) from **1.5% to 0.5%**.
+
+<small>(1,000 test problems, 3 seeds; the 95% confidence interval of the gain excludes zero in every seed).</small>
+
+In contrast, losses that re-weight pixels (by load path, thin members, optimality conditions, or focal loss) do not achieve this: they only shift the binarization threshold locally, moving the model along the baseline's compliance–material curve.
 
 ### Calibrated thresholding
 
