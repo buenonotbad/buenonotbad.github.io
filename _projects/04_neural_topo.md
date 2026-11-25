@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Neural Implicit Field Topology Optimization
-description: Reducing the error tail of neural implicit topology optimization · individual project · UB, 2026
+description: Reducing the error tail of neural implicit topology optimization · individual research paper · UB, 2026
 img: assets/img/projects/neural_topo/examples.png # thumbnail
 importance: 1
 category: AI

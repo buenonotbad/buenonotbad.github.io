@@ -36,7 +36,7 @@ I am a second-year M.S. student in Computer Science at the University at Buffalo
 Before that, I received master's degrees in Robotic Fabrication from ETH Zurich
 and in Architecture from UCLA.
 
-My research interests lie at the intersection of robotic fabrication, machine learning, structural computation, and optimization. In particular, I am interested in integrating structural reasoning into the design, planning and execution of robotic construction, enabling informed and holistic decision-making. In the long run, I hope to advance our understanding of robot-assisted structure formation and develop methods that make it both efficient and robust.
+My research interests lie at the intersection of robotic fabrication, machine learning, computational structural design, and optimization. In particular, I am interested in integrating structural reasoning and algorithmic methods into the planning and execution of robotic construction, so that structural performance and fabrication decisions are optimized globally rather than in isolation. In the long run, I hope to advance our understanding of robot-assisted structure formation and develop methods that make it both efficient and robust.
 
 > <small><em>This website is under active development; more content is on the way.</em></small>
 
